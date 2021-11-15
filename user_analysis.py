@@ -44,7 +44,7 @@ def display_score(answers, answers_2, answers_3, analysis_list):
   count_2 = 0
 
   for i in answers_2:
-    if i == "True":
+    if i.upper() == "TRUE":
       count_2 += 6
     else:
       count_2 += 0
@@ -160,7 +160,7 @@ def anxiety(list_1):
     if "`" in key:
       count += 1
   if count > 2 and count <= 4:
-    print(Fore.RED + "You are displaying symptoms of anxiety disorder." + Style.RESET_ALL)
+    print(Fore.RED + "You are displaying symptoms of an anxiety disorder." + Style.RESET_ALL)
   elif count > 4:
     print(Fore.RED + "You are displaying major symptoms of an anxiety disorder." + Style.RESET_ALL)
   return ""
@@ -183,7 +183,7 @@ def eating_disorder(list_1):
     if "#" in key:
       count += 1
   if count > 2 and count <= 4:
-    print(Fore.RED + "Youa re displaying symptoms of an eating disorder." + Style.RESET_ALL)
+    print(Fore.RED + "You are displaying symptoms of an eating disorder." + Style.RESET_ALL)
   elif count > 4:
     print(Fore.RED + "You are displaying major symptoms of an eating_disorder." + Style.RESET_ALL)
   return ""
@@ -229,6 +229,13 @@ def take_test():
   response = input("Would you like to take a mental health test? (yes or no): ")
   response = response.upper()
 
-  if response == "YES":
-    return True
+  if response.upper() == "YES":
+      return True
+
+  while response.upper() != "YES" and response.upper() != "NO":
+    print(Fore.RED + "Not eligible answer." + Style.RESET_ALL)
+    response = input("Would you like to take a mental health test? (yes or no): ")
+
+    if response.upper() == "YES":
+      return True
   return False

@@ -12,6 +12,8 @@ As this is a test of sorts it's important that you answer each question as hones
 
 Before beginning the assessment, find a quiet space where you can fully concentrate on the test.
 
+The program is ran in the file main.py. You will be asked whether or not you wish to take the mental health test. You can reply with either yes or no, if you do not wish to take it at this time.
+
 There are three sections in within this assessment. In the first section, you will be given a series of statements of which you must rank on a scale of 1 to 10.
 
 ## Section 1: On a Scale of 1-10

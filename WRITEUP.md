@@ -1,0 +1,9 @@
+# How am I feeling?: The Aftermath
+
+I've always been fascinated with online quizzes to discover something about oneself. Whether it be fun disney quizzes from buzzfeed or more serious ones such as mental screenings. As a psychology student, I believed it was only fitting to try and create one of these screenings, I find so fascinating, through the power of code.
+
+My program is meant to give people a chance to sort through the feelings they may have as well as help them understand what it is they may be going through. My program has the ability to decipher between eligible and ineligible inputs to statements/questions, store the statements to which a user has given a high scoring response, calculate the score and return an analysis for the user, and give the user resources as well as information on which disorder/illness they could be experiencing symptoms of. It also accesses different lists for certain responses a user inputs on specific statements/questions.
+
+My biggest challenges in creating my program were 1) figuring out how to change the statement/question when the user inputed certain responses and 2) for the ranking section of the test, figuring out how to make sure my code didn't crash if the user inputted an empty string (For some reason, this was very difficult for me as I had to change the data type from an integer to a string back to an integer). It also took a lot of work organizing my code into new functions and files, as I didn't initially expect to use so many functions.
+
+Ultimately, this project was very fun for me to do and I'm proud of the work that I presented, whether it be perfect or not. I never would have beleived that I'd be able to create such a thing using just python code and my brain.
